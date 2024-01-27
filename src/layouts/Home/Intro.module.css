@@ -103,6 +103,19 @@
   flex-direction: row;
   align-items: center;
   position: relative;
+  width: 50vw;
+
+  &[data-hidden='true'] {
+    opacity: 0;
+  }
+}
+.row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 50vw;
+  font-size: 5vw;
 
   &[data-hidden='true'] {
     opacity: 0;
