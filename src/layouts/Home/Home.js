@@ -74,7 +74,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
+        title=""
         description="Design portfolio of Hamish Williams — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
@@ -83,6 +83,11 @@ export const Home = () => {
         sectionRef={intro}
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
+      />
+      <Profile
+        id="details"
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
       />
       <ProjectSummary
         id="project-1"
@@ -148,11 +153,6 @@ export const Home = () => {
             },
           ],
         }}
-      />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
       />
       <Footer />
     </div>

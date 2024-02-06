@@ -1,5 +1,8 @@
 import { Icon } from 'components/Icon';
 import { Monogram } from 'components/Monogram';
+import { Image } from 'components/Image';
+import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
+import profileImg from 'assets/Logo.jpg';
 import { useTheme } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
@@ -148,7 +151,15 @@ export const Navbar = () => {
           aria-label="Hamish Williams, Designer"
           onClick={handleMobileNavClick}
         >
-          <Monogram highlight />
+          {/* <Monogram highlight /> */}
+          <Image
+            reveal
+            delay={100}
+            placeholder={profileImgPlaceholder}
+            srcSet={[profileImg]}
+            sizes={`(max-width: ${media.laptop}px) 29px, 46px `}
+            alt="Main Logo"
+          />
         </a>
       </RouterLink>
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />

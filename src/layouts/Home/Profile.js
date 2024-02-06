@@ -18,9 +18,9 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="About Us" start={visible} delay={500} />
     </Heading>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
+    {/* <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
       <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
       animations, and icon illustration. Being comfortable with code allows me to rapidly
@@ -31,6 +31,26 @@ const ProfileText = ({ visible, titleId }) => (
       In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
       <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
       about new projects, so feel free to drop me a line.
+    </Text> */}
+    <Text>
+      Finance and Analytics Club Club aims to spread financial literacy amongst the campus
+      community & aspires to make everyone adept in handling Personal Finances. We work at
+      the merger of finance and analytics applying analytical understandings and tools in
+      the areas of finance and economics. In the era of digitalization, rapid growth
+      opportunities in fintech industries have sprung. Triumphing for these opportunities
+      requires relevant skills and domain knowledge, which ranges from understanding basic
+      financial statements to capital markets, Corporate Finance, Econometrics, art of
+      investing, building trading ideas, strategies and FAC (IITK) feels humbled in
+      covering these.
+    </Text>
+    <br />
+    <br />
+    <br />
+    <br />
+    <Text>
+      FAC (IITK) timetable is circumscribed with engaging activities throughout the year
+      including lectures, presentations, summer projects, assignments, workshops, seminars
+      on certifications, guest speakers & Q&A sessions.
     </Text>
   </Fragment>
 );
@@ -62,7 +82,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Send us a message
               </Button>
             </div>
             <div className={styles.column}>
@@ -74,7 +94,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  About Me
+                  About Us
                 </div>
               </div>
               <div className={styles.image}>

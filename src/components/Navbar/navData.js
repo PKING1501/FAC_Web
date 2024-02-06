@@ -1,11 +1,11 @@
 export const navLinks = [
   {
-    label: 'Projects',
-    pathname: '/#project-1',
+    label: 'About',
+    pathname: '/#details',
   },
   {
-    label: 'Details',
-    pathname: '/#details',
+    label: 'Projects',
+    pathname: '/#project-1',
   },
   {
     label: 'Articles',
@@ -19,18 +19,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
+    label: 'Facebook',
+    url: 'https://www.facebook.com/fdgiitkanpur/',
+    icon: 'facebook',
   },
   {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
+    label: 'Instagram',
+    url: 'https://www.instagram.com/fac.iitk/',
+    icon: 'insta',
   },
   {
-    label: 'Github',
-    url: 'https://github.com/HamishMW',
-    icon: 'github',
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/company/finance-and-analytics-club/mycompany/',
+    icon: 'linkedin',
   },
 ];
