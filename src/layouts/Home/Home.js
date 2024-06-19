@@ -7,6 +7,7 @@ import gamestackTexture from 'assets/gamestack-login.jpg';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
+import quantForecastTexture from 'assets/QuantForecast.jpg';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
@@ -34,6 +35,7 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const details = useRef();
+  const projectFour = useRef();
 
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, details];
@@ -154,7 +156,27 @@ export const Home = () => {
           ],
         }}
       />
-      <Footer />
+      <ProjectSummary
+        id="project-4" // ID for the new project
+        sectionRef={projectFour} // Reference for the new project
+        visible={visibleSections.includes(projectThree.current)} // Visibility check
+        index={4} // Index of the new project
+        title="Quant Forecast" // Title of the new project
+        description="IPO Analysis using DL methods like Neural Networks and NLP's." // Description of the new project
+        buttonText="View project" // Button text for the new project
+        buttonLink="/projects/new-project" // Link for the new project
+        model={{
+          type: 'laptop', // Type of device for the image (laptop, phone, etc.)
+          alt: 'New project image', // Alt text for the image
+          textures: [
+            {
+              srcSet: [quantForecastTexture, sliceTextureLarge], // Image sources
+              placeholder: sliceTexturePlaceholder, // Placeholder image
+            },
+          ],
+        }}
+      />
+      {/* <Footer /> */}
     </div>
   );
 };
