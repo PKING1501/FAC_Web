@@ -152,14 +152,14 @@ export const Navbar = () => {
           onClick={handleMobileNavClick}
         >
           {/* <Monogram highlight /> */}
-          <Image
+          {/* <Image
             reveal
             delay={100}
             placeholder={profileImgPlaceholder}
             srcSet={[profileImg]}
             sizes={`(max-width: ${media.laptop}px) 29px, 46px `}
             alt="Main Logo"
-          />
+          /> */}
         </a>
       </RouterLink>
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />

@@ -14,11 +14,13 @@ import { useFormInput } from 'hooks';
 import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const errorRef = useRef();
   const email = useFormInput('');
   const message = useFormInput('');
+  const formName = useFormInput('');
   const [sending, setSending] = useState(false);
   const [complete, setComplete] = useState(false);
   const [statusError, setStatusError] = useState('');
@@ -33,27 +35,30 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email.value,
-          message: message.value,
-        }),
-      });
-
-      const responseMessage = await response.json();
-
-      const statusError = getStatusError({
-        status: response?.status,
-        errorMessage: responseMessage?.error,
-        fallback: 'There was a problem sending your message',
-      });
-
-      if (statusError) throw new Error(statusError);
+      emailjs
+        .send(
+          'service_po9cbo8', // paste your ServiceID here (you'll get one when your service is created).
+          'template_lrvecac', // paste your TemplateID here (you'll find it under email templates).
+          {
+            from_name: formName.value,
+            to_name: 'FAC_IITK', // put your name here.
+            from_email: email.value,
+            to_email: 'prem.kansagra1234@gmail.com', //put your email here.
+            message: message.value,
+          },
+          '4nn9vaVYg9qqQwfZf' //paste your Public Key here. You'll get it in your profile section.
+        )
+        .then(
+          () => {
+            // setLoading(false);
+            // alert('Thank you. We will get back to you as soon as possible.');
+          },
+          error => {
+            // setLoading(false);
+            console.log(error);
+            alert('Something went wrong. Please try again.');
+          }
+        );
 
       setComplete(true);
       setSending(false);
@@ -79,12 +84,23 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <DecoderText text="Say Hi !" start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
+            />
+            <Input
+              required
+              className={styles.input}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS, initDelay)}
+              autoComplete="email"
+              label="Your Name"
+              type="text"
+              maxLength={512}
+              {...formName}
             />
             <Input
               required
@@ -160,7 +176,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              We’ll get back to you within a couple days, sit tight
+              Thank you. We will get back to you as soon as possible.
             </Text>
             <Button
               secondary
@@ -176,7 +192,7 @@ export const Contact = () => {
           </div>
         )}
       </Transition>
-      <Footer className={styles.footer} />
+      {/* <Footer className={styles.footer} /> */}
     </Section>
   );
 };

@@ -45,13 +45,13 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <br />
     <br />
-    <br />
-    <br />
     <Text>
-      FAC (IITK) timetable is circumscribed with engaging activities throughout the year
-      including lectures, presentations, summer projects, assignments, workshops, seminars
-      on certifications, guest speakers & Q&A sessions.
+      <Link href="/">FAC (IITK)</Link> timetable is circumscribed with engaging activities
+      throughout the year including lectures, presentations, summer projects, assignments,
+      workshops, seminars on certifications, guest speakers & Q&A sessions.
     </Text>
+    <br />
+    <br />
   </Fragment>
 );
 
@@ -106,7 +106,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
                 />
-                <svg
+                {/* <svg
                   aria-hidden="true"
                   width="135"
                   height="765"
@@ -115,7 +115,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   data-visible={visible}
                 >
                   <use href={`${profileKatakana}#katakana-profile`} />
-                </svg>
+                </svg> */}
               </div>
             </div>
           </div>

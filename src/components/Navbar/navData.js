@@ -1,5 +1,9 @@
 export const navLinks = [
   {
+    label: 'Home',
+    pathname: '/',
+  },
+  {
     label: 'About',
     pathname: '/#details',
   },
@@ -32,5 +36,10 @@ export const socialLinks = [
     label: 'LinkedIn',
     url: 'https://www.linkedin.com/company/finance-and-analytics-club/mycompany/',
     icon: 'linkedin',
+  },
+  {
+    label: 'GitHub',
+    url: 'https://github.com/Finance-and-Analytics-Club-FAC-IITK',
+    icon: 'github',
   },
 ];

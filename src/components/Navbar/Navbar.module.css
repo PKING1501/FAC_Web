@@ -67,7 +67,7 @@
   display: inline-flex;
   align-items: center;
 
-  &:hover,
+  /* &:hover,
   &:active,
   &:focus,
   &[aria-current='page'] {
@@ -97,7 +97,10 @@
   &[aria-current='page']::after {
     transform: scaleX(1);
     transform-origin: left;
-  }
+  } */
+}
+.navLink:hover {
+  color: #08e4fc;
 }
 
 .navIcons {
