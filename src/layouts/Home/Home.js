@@ -176,7 +176,7 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
