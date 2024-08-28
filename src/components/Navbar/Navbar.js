@@ -1,6 +1,7 @@
 import { Icon } from 'components/Icon';
 import { Monogram } from 'components/Monogram';
 import { Image } from 'components/Image';
+import CandlestickChartIcon from '@mui/icons-material/CandlestickChart';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import profileImg from 'assets/Logo.jpg';
 import { useTheme } from 'components/ThemeProvider';
@@ -15,6 +16,7 @@ import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.css';
 import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
+import { Color } from 'three';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
@@ -144,24 +146,7 @@ export const Navbar = () => {
 
   return (
     <header className={styles.navbar} ref={headerRef}>
-      <RouterLink href={route === '/' ? '/#intro' : '/'} scroll={false}>
-        <a
-          data-navbar-item
-          className={styles.logo}
-          aria-label="Hamish Williams, Designer"
-          onClick={handleMobileNavClick}
-        >
-          {/* <Monogram highlight /> */}
-          {/* <Image
-            reveal
-            delay={100}
-            placeholder={profileImgPlaceholder}
-            srcSet={[profileImg]}
-            sizes={`(max-width: ${media.laptop}px) 29px, 46px `}
-            alt="Main Logo"
-          /> */}
-        </a>
-      </RouterLink>
+      <CandlestickChartIcon href={route === '/' ? '/#intro' : '/'} scroll={false} />
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />
       <nav className={styles.nav}>
         <div className={styles.navList}>

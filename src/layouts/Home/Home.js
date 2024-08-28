@@ -96,9 +96,9 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
+        title="Projects"
         description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        buttonText="View projects"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -117,10 +117,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
+        title="Events"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="/projects/slice"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -141,9 +141,9 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
+        title="Resources"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
+        buttonText="View Resources"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',
@@ -156,12 +156,12 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-4" // ID for the new project
         sectionRef={projectFour} // Reference for the new project
         visible={visibleSections.includes(projectThree.current)} // Visibility check
         index={4} // Index of the new project
-        title="Quant Forecast" // Title of the new project
+        title="Previous Sponsors" // Title of the new project
         description="IPO Analysis using DL methods like Neural Networks and NLP's." // Description of the new project
         buttonText="View project" // Button text for the new project
         buttonLink="/projects/new-project" // Link for the new project
@@ -175,7 +175,7 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <Footer />
     </div>
   );
