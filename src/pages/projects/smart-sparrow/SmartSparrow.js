@@ -3,7 +3,7 @@ import backgroundSprPlaceholder from 'assets/spr-background-placeholder.jpg';
 import imageSprBackgroundVolcanismLarge from 'assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from 'assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
-import backgroundSpr from 'assets/spr-background.jpg';
+import backgroundSpr from 'assets/QuantWeb.jpg';
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
 import imageSprComponentsDark from 'assets/spr-components-dark.png';
@@ -16,8 +16,8 @@ import imageSprDesignSystemDark from 'assets/spr-design-system-dark.png';
 import imageSprDesignSystemLightLarge from 'assets/spr-design-system-light-large.png';
 import imageSprDesignSystemLightPlaceholder from 'assets/spr-design-system-light-placeholder.png';
 import imageSprDesignSystemLight from 'assets/spr-design-system-light.png';
-import imageSprLessonBuilderDarkLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import imageSprLessonBuilderDarkPlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
+import imageSprLessonBuilderDarkLarge from 'assets/QuantWeb.jpg';
+import imageSprLessonBuilderDarkPlaceholder from 'assets/QuantWeb.jpg';
 import imageSprLessonBuilderDark from 'assets/spr-lesson-builder-dark.jpg';
 import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-large.jpg';
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
@@ -32,6 +32,7 @@ import imageSprSchema1LightLarge from 'assets/spr-schema-1-light-large.png';
 import imageSprSchema1LightPlaceholder from 'assets/spr-schema-1-light-placeholder.png';
 import imageSprSchema1Light from 'assets/spr-schema-1-light.png';
 import imageSprSchema2DarkLarge from 'assets/spr-schema-2-dark-large.png';
+import QuantWeb from 'assets/QuantWeb.jpg';
 import imageSprSchema2DarkPlaceholder from 'assets/spr-schema-2-dark-placeholder.png';
 import imageSprSchema2Dark from 'assets/spr-schema-2-dark.png';
 import imageSprSchema2LightLarge from 'assets/spr-schema-2-light-large.png';
@@ -70,14 +71,15 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Designing the future of education';
+const title = 'Quant Web';
+const title1 = 'Quant Forecast';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'The project aimed to develop a full fledged backtesting engine with multiple risk management measures to ease out the process of backtesting. The QuantWeb backtesting engine also allowed the user to create their own strategy using the create your own strategy method. This was achieved with the help of Django.';
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'IPO Analysis',
+  'Machine Learning',
+  'Fundamental Analysis',
+  'Stock Price Prediction',
 ];
 
 export const SmartSparrow = () => {
@@ -94,7 +96,7 @@ export const SmartSparrow = () => {
   return (
     <Fragment>
       <ProjectContainer className="spr">
-        <Meta title={title} prefix="Projects" description={description} />
+        <Meta prefix="Projects" description={description} />
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
           src={backgroundSpr}
@@ -103,6 +105,30 @@ export const SmartSparrow = () => {
         />
         <ProjectHeader
           title={title}
+          description={description}
+          url="https://www.smartsparrow.com/"
+          roles={roles}
+        />
+        <ProjectSection padding="top">
+          <ProjectSectionContent>
+            <ProjectImage
+              raised
+              key={themeId}
+              srcSet={isDark ? [QuantWeb, QuantWeb] : [QuantWeb, QuantWeb]}
+              placeholder={
+                isDark
+                  ? imageSprLessonBuilderDarkPlaceholder
+                  : imageSprLessonBuilderLightPlaceholder
+              }
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+
+        {/* new project copied */}
+        <ProjectHeader
+          title={title1}
           description={description}
           url="https://www.smartsparrow.com/"
           roles={roles}
@@ -127,6 +153,7 @@ export const SmartSparrow = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
+
         <ProjectSection>
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
