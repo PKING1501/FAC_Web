@@ -4,9 +4,15 @@ import gamestackTexture2 from 'assets/gamestack-list.jpg';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
+import mobileTexture2Large from 'assets/mobile2.jpg';
+import mobileTexture2Placeholder from 'assets/mobile2.jpg';
+import mobileTexture2 from 'assets/mobile2.jpg';
+import mobileTextureLarge from 'assets/mobile.jpg';
+import mobileTexturePlaceholder from 'assets/mobile.jpg';
+import mobileTexture from 'assets/mobile.jpg';
+import sliceTextureLarge from 'assets/team.jpg';
+import sliceTexturePlaceholder from 'assets/team.jpg';
+import sliceTexture from 'assets/team.jpg';
 import quantForecastTexture from 'assets/QuantForecast.jpg';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
@@ -38,7 +44,7 @@ export const Home = () => {
   const projectFour = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree,projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -93,34 +99,15 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-1"
+        alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Projects"
-        description="Designing a platform to help educators build better online courseware"
+        description="We engage in projects that integrate technical and fundamental analysis with advanced methodologies and tools "
         buttonText="View projects"
         buttonLink="/projects/smart-sparrow"
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [sprTexture, sprTextureLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-2"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Events"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="/projects/slice"
+        
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -137,14 +124,61 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
+        id="project-2"
+        
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="Events"
+        description="Explore our events like workshops, competitions, talks and sessions in areas of finance "
+        buttonText="View Events"
+        buttonLink="/projects/slice"
+        model={{
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
+          textures: [
+            {
+              srcSet: [sprTexture, sprTextureLarge],
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
         id="project-3"
+        alternate
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Resources"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        description="Get yourself acquainted with finance insights through our tailored resources and roadmaps"
         buttonText="View Resources"
         buttonLink="/projects/slice"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [mobileTexture, mobileTextureLarge],
+              placeholder: mobileTexturePlaceholder,
+            },
+            {
+              srcSet: [mobileTexture2, mobileTexture2Large],
+              placeholder:mobileTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Team"
+        description="Meet the Finance and Analytics Club Team 2024"
+        buttonText="View Team"
+        buttonLink="/team/"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
