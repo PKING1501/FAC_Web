@@ -40,7 +40,7 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'NCW';
 const description =
   'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
@@ -75,7 +75,7 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>PROJECTS</ProjectSectionHeading>
               <ProjectSectionText>
                 Teachers needed a better way to create collaborative group activities by
                 annotating slides on Slice. Before starting this project, a layer could
@@ -108,7 +108,7 @@ export const Slice = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>WORKSHOPS</ProjectSectionHeading>
               <ProjectSectionText>
                 A problem we heard about often form users was that it was difficult to
                 find images they had previously seen or worked on. To solve this we added
@@ -148,7 +148,7 @@ export const Slice = () => {
               </div>
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>LECTURES</ProjectSectionHeading>
               <ProjectSectionText>
                 Marking and annotating areas on high resolution biomedical images is the
                 core experience of the app, and it was easy to get lost or lose sense of
@@ -162,7 +162,7 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>HACATHONS</ProjectSectionHeading>
               <ProjectSectionText>
                 Real-time collaborative annotation facilitated better collaboration
                 between learners, and was much easier to run group exercises with the new
