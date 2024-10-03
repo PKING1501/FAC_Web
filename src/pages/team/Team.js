@@ -26,14 +26,79 @@ import emailjs from '@emailjs/browser';
 import coordinator1 from 'assets/coordinator1.jpg';
 import coordinator2 from 'assets/coordinator2.jpg';
 import coordinator3 from 'assets/coordinator3.jpg';
-import coordinator4 from 'assets/coordinator4.jpg';
+import coordinator4 from 'assets/coordinator4.png';
+
+import secretary1 from 'assets/kethan.png';
+import secretary2 from 'assets/secretary29.png';
+import secretary3 from 'assets/ankit.JPG';
+import secretary4 from 'assets/secretary29.png';
+import secretary5 from 'assets/keshav.JPG';
+import secretary6 from 'assets/anurag.JPG';
+import secretary7 from 'assets/aarush.JPEG';
+import secretary8 from 'assets/secretary28.png';
+import secretary9 from 'assets/ayush_singh.JPG';
+import secretary10 from 'assets/khush.JPG';
+import secretary11 from 'assets/shantanu.jpg';
+import secretary12 from 'assets/atit.JPG';
+import secretary13 from 'assets/pallav.JPG';
+import secretary14 from 'assets/neel.JPG';
+import secretary15 from 'assets/kushagra.JPG';
+import secretary16 from 'assets/Siddharth.JPG';
+import secretary17 from 'assets/ashish.jpg';
+import secretary18 from 'assets/ayush.JPG';
+import secretary19 from 'assets/harsh.JPG';
+import secretary20 from 'assets/sanchit.JPG';
+import secretary21 from 'assets/atishay.JPG';
+import secretary22 from 'assets/shivam.JPG';
+import secretary23 from 'assets/manit.JPEG';
+import secretary24 from 'assets/nischay.JPEG';
+import secretary25 from 'assets/shreyansh.JPG';
+import secretary26 from 'assets/arihant.JPG';
+import secretary27 from 'assets/hansika.PNG';
+import secretary28 from 'assets/secretary28.png';
+import secretary29 from 'assets/secretary29.png';
+import secretary30 from 'assets/secretary30.png';
+
 
 // Array of image sources
 const coordinatorImages = [
-  { src: coordinator1, alt: 'Coordinator 1' },
-  { src: coordinator2, alt: 'Coordinator 2' },
-  { src: coordinator3, alt: 'Coordinator 3' },
-  { src: coordinator4, alt: 'Coordinator 4' },
+  { src: coordinator1, alt: 'Naman Sethi',name:'Naman Sethi' },
+  { src: coordinator2, alt: 'Tanush Goel',name:'Tanush Goel' },
+  { src: coordinator3, alt: 'Moni Dutt',name:'Moni Dutt' },
+  { src: coordinator4, alt: 'Rachit Choudhary',name:'Rachit Choudhary' },
+];
+
+const secretariesImages = [
+  { src: secretary1, alt: 'Kethan', name: 'Kethan Challa' },
+  { src: secretary2, alt: 'Unnamed', name: 'Akshat Garg' },
+  { src: secretary3, alt: 'Ankit', name: 'Ankit Kumar' },
+  { src: secretary4, alt: 'Unnamed', name: 'Aman Sanwal' },
+  { src: secretary5, alt: 'Keshav', name: 'Keshav Bansal' },
+  { src: secretary6, alt: 'Anurag', name: 'Anurag Thakur' },
+  { src: secretary7, alt: 'Aarush', name: 'Aarush Singh' },
+  { src: secretary8, alt: 'Unnamed', name: 'Aarnav Gupta' },
+  { src: secretary9, alt: 'Ayush Singh', name: 'Ayush Singh' },
+  { src: secretary10, alt: 'Khush', name: 'Khush Maheshwari' },
+  { src: secretary11, alt: 'Shantanu', name: 'Shantanu Prakash' },
+  { src: secretary12, alt: 'Atit', name: 'Atit Jain' },
+  { src: secretary13, alt: 'Pallav', name: 'Pallav Rastogi' },
+  { src: secretary14, alt: 'Neel', name: 'Neel D Jadia' },
+  { src: secretary15, alt: 'Kushagra', name: 'Kushagra Tiwari' },
+  { src: secretary16, alt: 'Siddharth', name: 'Siddharth Jaiswal' },
+  { src: secretary17, alt: 'Ashish', name: 'Ashish Upadhyay' },
+  { src: secretary18, alt: 'Ayush', name: 'Ayush Omer' },
+  { src: secretary19, alt: 'Harsh', name: 'Harshvardhan Gaur' },
+  { src: secretary20, alt: 'Sanchit', name: 'Sanchit Arora' },
+  { src: secretary21, alt: 'Atishay', name: 'Atishay Jain' },
+  { src: secretary22, alt: 'Shivam', name: 'Shivam Tomar' },
+  { src: secretary23, alt: 'Manit', name: 'Manit' },
+  { src: secretary24, alt: 'Nischay', name: 'Nischay Agrawal' },
+  { src: secretary25, alt: 'Shreyansh', name: 'Shreyansh Tarawat' },
+  { src: secretary26, alt: 'Arihant', name: 'Arihant Satpathy' },
+  { src: secretary27, alt: 'Hansika', name: 'Hansika Gupta' },
+  { src: secretary28, alt: 'Unnamed', name: 'Om Bhartiya' },
+  { src: secretary29, alt: 'Unnamed', name: 'Nitin Maheshwari' },
+  { src: secretary30, alt: 'Unnamed', name: 'Pranav Krishna' }
 ];
 
 export const Team = () => {
@@ -225,8 +290,13 @@ export const Team = () => {
       <Heading className={styles.heading} data-visible={0} level={3} id={0}>
         <DecoderText text="Meet Our Team" start={1} delay={500} />
       </Heading>
-      <div className={styles.imageContainer}>
+      
+      <Heading className={styles.heading} data-visible={0} level={4} id={0}>
+        <DecoderText text="Coordinators" start={1} delay={500} />
+      </Heading>
+      <div className={styles.coordinatorsContainer}>
         {coordinatorImages.map((image, index) => (
+          <div>
           <Image
             key={index}
             reveal
@@ -236,9 +306,40 @@ export const Team = () => {
             sizes="40vw, 480px"
             alt={image.alt}
             className={styles.image}
+            
+           
           />
+        <p className={styles.imageName}>{image.name}</p>
+        </div>
         ))}
       </div>
+      
+
+      
+      <Heading className={styles.heading} data-visible={0} level={4} id={0}>
+      <DecoderText text="Secretaries" start={1} delay={500} />
+      </Heading>
+      <div className={styles.secretariesContainer}>
+        {secretariesImages.map((image, index) => (
+          <div>
+          <Image
+            key={index}
+            reveal
+            delay={100}
+            placeholder={image.src}
+            srcSet={[image.src]}
+            sizes="40vw, 480px"
+            alt={image.alt}
+            className={styles.image}
+            
+           
+          />
+        <p className={styles.imageName}>{image.name}</p>
+        </div>
+        ))}
+      </div>
+      
+
     </Section>
   );
 };

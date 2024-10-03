@@ -33,7 +33,7 @@ const ProfileText = ({ visible, titleId }) => (
       about new projects, so feel free to drop me a line.
     </Text> */}
     <Text>
-      Finance and Analytics Club Club aims to spread financial literacy amongst the campus
+      {/* Finance and Analytics Club Club aims to spread financial literacy amongst the campus
       community & aspires to make everyone adept in handling Personal Finances. We work at
       the merger of finance and analytics applying analytical understandings and tools in
       the areas of finance and economics. In the era of digitalization, rapid growth
@@ -41,12 +41,29 @@ const ProfileText = ({ visible, titleId }) => (
       requires relevant skills and domain knowledge, which ranges from understanding basic
       financial statements to capital markets, Corporate Finance, Econometrics, art of
       investing, building trading ideas, strategies and FAC (IITK) feels humbled in
-      covering these.
-    </Text>
+      covering these. */}
+      
+      Finance and Analytics Club at IITK aims to spread financial literacy amongst the campus
+      community & aspires to make everyone adept in handling Personal Finances. We work at
+      the merger of finance and analytics applying analytical understandings and tools in
+      the areas of finance and economics to
+       tackle real-world challenges.
+       Our approaches integrate a blend of advanced algorithmic trading, statistical modeling,
+        financial investment strategies, data analytics,e.t.c
+        </Text>
+        <br/>
+        <br />
+        <Text>
+      In collaboration with industry leaders, we offer training sessions, networking opportunities, 
+      and workshops to bridge the gap between academics and the professional world. By fostering
+       a passionate network of students and faculty, we strive to create an environment where 
+       learning, innovation, and practical experience in finance and analytics thrive.
+
+       </Text>
     <br />
     <br />
     <Text>
-      <Link href="/">FAC (IITK)</Link> timetable is circumscribed with engaging activities
+      FAC IITK timetable is circumscribed with engaging activities
       throughout the year including lectures, presentations, summer projects, assignments,
       workshops, seminars on certifications, guest speakers & Q&A sessions.
     </Text>
@@ -104,7 +121,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Chart"
                 />
                 {/* <svg
                   aria-hidden="true"
