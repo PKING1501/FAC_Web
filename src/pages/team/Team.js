@@ -54,7 +54,7 @@ import secretary23 from 'assets/manit.jpeg';
 import secretary24 from 'assets/nischay.jpeg';
 import secretary25 from 'assets/shreyansh.jpg';
 import secretary26 from 'assets/arihant.jpg';
-import secretary27 from 'assets/hansika.PNG';
+import secretary27 from 'assets/hansika.png';
 import secretary28 from 'assets/secretary28.png';
 import secretary29 from 'assets/secretary29.png';
 import secretary30 from 'assets/secretary30.png';
