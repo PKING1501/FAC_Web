@@ -59,13 +59,12 @@ import secretary28 from 'assets/secretary28.png';
 import secretary29 from 'assets/secretary29.png';
 import secretary30 from 'assets/secretary30.png';
 
-
 // Array of image sources
 const coordinatorImages = [
-  { src: coordinator1, alt: 'Naman Sethi',name:'Naman Sethi' },
-  { src: coordinator2, alt: 'Tanush Goel',name:'Tanush Goel' },
-  { src: coordinator3, alt: 'Moni Dutt',name:'Moni Dutt' },
-  { src: coordinator4, alt: 'Rachit Choudhary',name:'Rachit Choudhary' },
+  { src: coordinator1, alt: 'Naman Sethi', name: 'Naman Sethi' },
+  { src: coordinator2, alt: 'Tanush Goel', name: 'Tanush Goel' },
+  { src: coordinator3, alt: 'Moni Dutt', name: 'Moni Dutt' },
+  { src: coordinator4, alt: 'Rachit Choudhary', name: 'Rachit Choudhary' },
 ];
 
 const secretariesImages = [
@@ -98,7 +97,7 @@ const secretariesImages = [
   { src: secretary27, alt: 'Hansika', name: 'Hansika Gupta' },
   { src: secretary28, alt: 'Unnamed', name: 'Om Bhartiya' },
   { src: secretary29, alt: 'Unnamed', name: 'Nitin Maheshwari' },
-  { src: secretary30, alt: 'Unnamed', name: 'Pranav Krishna' }
+  { src: secretary30, alt: 'Unnamed', name: 'Pranav Krishna' },
 ];
 
 export const Team = () => {
@@ -290,56 +289,48 @@ export const Team = () => {
       <Heading className={styles.heading} data-visible={0} level={3} id={0}>
         <DecoderText text="Meet Our Team" start={1} delay={500} />
       </Heading>
-      
+
       <Heading className={styles.heading} data-visible={0} level={4} id={0}>
         <DecoderText text="Coordinators" start={1} delay={500} />
       </Heading>
       <div className={styles.coordinatorsContainer}>
         {coordinatorImages.map((image, index) => (
-          <div>
-          <Image
-            key={index}
-            reveal
-            delay={100}
-            placeholder={image.src}
-            srcSet={[image.src]}
-            sizes="40vw, 480px"
-            alt={image.alt}
-            className={styles.image}
-            
-           
-          />
-        <p className={styles.imageName}>{image.name}</p>
-        </div>
+          <div key={index}>
+            <Image
+              key={index}
+              reveal
+              delay={100}
+              placeholder={image.src}
+              srcSet={[image.src]}
+              sizes="40vw, 480px"
+              alt={image.alt}
+              className={styles.image}
+            />
+            <p className={styles.imageName}>{image.name}</p>
+          </div>
         ))}
       </div>
-      
 
-      
       <Heading className={styles.heading} data-visible={0} level={4} id={0}>
-      <DecoderText text="Secretaries" start={1} delay={500} />
+        <DecoderText text="Secretaries" start={1} delay={500} />
       </Heading>
       <div className={styles.secretariesContainer}>
         {secretariesImages.map((image, index) => (
-          <div>
-          <Image
-            key={index}
-            reveal
-            delay={100}
-            placeholder={image.src}
-            srcSet={[image.src]}
-            sizes="40vw, 480px"
-            alt={image.alt}
-            className={styles.image}
-            
-           
-          />
-        <p className={styles.imageName}>{image.name}</p>
-        </div>
+          <div key={index}>
+            <Image
+              key={index}
+              reveal
+              delay={100}
+              placeholder={image.src}
+              srcSet={[image.src]}
+              sizes="40vw, 480px"
+              alt={image.alt}
+              className={styles.image}
+            />
+            <p className={styles.imageName}>{image.name}</p>
+          </div>
         ))}
       </div>
-      
-
     </Section>
   );
 };
