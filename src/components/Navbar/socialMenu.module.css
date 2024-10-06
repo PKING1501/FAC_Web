@@ -1,9 +1,10 @@
 .menu {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 25vw;
+  height: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  margin-bottom: -2.5vh;
   justify-content: center;
   /* gap: '20px';
     margin-left:'25px'; */
@@ -11,7 +12,7 @@
 
 .menu .toggle {
   position: relative;
-  background-color: #333;
+  background-color: transparent;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -49,7 +50,7 @@
 .menu li a {
   position: relative;
   display: flex;
-  transform: rotate(calc(360deg + 360deg / -11.5 * var(--i)));
+  transform: rotate(calc(360deg / -11.5 * var(--i)));
   width: 60px;
   height: 60px;
   background-color: transparent;
@@ -58,7 +59,7 @@
   justify-content: center;
   border-radius: 50%;
   font-size: 1.75rem;
-  color: var(--clr);
+  color: black;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
 }

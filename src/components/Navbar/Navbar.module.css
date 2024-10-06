@@ -56,7 +56,7 @@
 }
 
 .navLink {
-  padding: var(--spaceM);
+  padding: var(--spaceM) 15px;
   color: rgb(var(--rgbText) / 0.8);
   font-weight: var(--fontWeightMedium);
   font-size: var(--headerNavFontSize);
@@ -103,7 +103,7 @@
   color: #08e4fc;
 }
 
-.navIcons {
+/* .navIcons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@
     align-items: center;
     justify-content: center;
   }
-}
+} */
 
 .navIconLink {
   display: flex;

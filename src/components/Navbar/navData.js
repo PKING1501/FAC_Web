@@ -11,10 +11,10 @@ export const navLinks = [
     label: 'Projects',
     pathname: '/#project-1',
   },
-  // {
-  //   label: 'Team',
-  //   pathname: '/team',
-  // },
+  {
+    label: 'Team',
+    pathname: '/team',
+  },
   {
     label: 'Events',
     pathname: '/#project-2',

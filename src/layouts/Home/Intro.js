@@ -13,6 +13,7 @@ import RouterLink from 'next/link';
 import { Fragment, useEffect, useState } from 'react';
 import { cssProps } from 'utils/style';
 import styles from './Intro.module.css';
+import SocialMenu from '../../components/Navbar/socialMenu';
 
 const DisplacementSphere = dynamic(() =>
   import('layouts/Home/DisplacementSphere').then(mod => mod.DisplacementSphere)
@@ -59,6 +60,9 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
       tabIndex={-1}
       {...rest}
     >
+      <div style={{ position: 'absolute', top: '20vh', right: '50px', zIndex: '1000' }}>
+        <SocialMenu />
+      </div>
       <Transition in key={theme.themeId} timeout={3000}>
         {(visible, status) => (
           <Fragment>
@@ -115,17 +119,6 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 onClick={handleScrollClick}
               >
                 <VisuallyHidden>Scroll to projects</VisuallyHidden>
-              </a>
-            </RouterLink>
-            <RouterLink href="/#project-2">
-              <a
-                className={styles.mobileScrollIndicator}
-                data-status={status}
-                data-hidden={scrollIndicatorHidden}
-                onClick={handleScrollClick}
-              >
-                <VisuallyHidden>Scroll to projects</VisuallyHidden>
-                <ArrowDown aria-hidden />
               </a>
             </RouterLink>
           </Fragment>

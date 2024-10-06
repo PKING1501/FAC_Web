@@ -17,7 +17,7 @@ import styles from './Navbar.module.css';
 import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
 import { Color } from 'three';
-import SocialMenu from './socialMenu';
+// import SocialMenu from './socialMenu';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
@@ -164,8 +164,9 @@ export const Navbar = () => {
             </RouterLink>
           ))}
         </div>
-        <NavbarIcons desktop />
+        {/* <NavbarIcons desktop /> */}
       </nav>
+      {/* <SocialMenu /> */}
       <Transition unmount in={menuOpen} timeout={msToNum(tokens.base.durationL)}>
         {visible => (
           <nav className={styles.mobileNav} data-visible={visible}>
@@ -186,65 +187,30 @@ export const Navbar = () => {
                 </a>
               </RouterLink>
             ))}
-            <NavbarIcons />
-            <ThemeToggle isMobile />
+            {/* <NavbarIcons /> */}
+            {/* <ThemeToggle isMobile /> */}
           </nav>
         )}
       </Transition>
-      {!isMobile && <ThemeToggle data-navbar-item />}
+      {/* {!isMobile && <ThemeToggle data-navbar-item />} */}
     </header>
   );
 };
 
-const NavbarIcons = ({ desktop }) => (
-  <div className={styles.navIcons}>
-    {/* {socialLinks.map(({ label, url, icon }) => (
-      <a
-        key={label}
-        data-navbar-item={desktop || undefined}
-        className={styles.navIconLink}
-        aria-label={label}
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon className={styles.navIcon} icon={icon} />
-      </a>
-    ))} */}
-    <SocialMenu />
-  </div>
-);
-
-// const NavbarIcons = () => {
-//   const [iconsVisible, setIconsVisible] = useState(false); // State to toggle visibility
-
-//   const handleIconClick = () => {
-//     setIconsVisible(!iconsVisible); // Toggle icon visibility
-//   };
-
-//   return (
-//     <SocialMenu />
-//     // <div className={styles.iconContainer}>
-//     //   {/* The "+" button */}
-//     //   <button onClick={handleIconClick} className={styles.plusIcon}>
-//     //     +
-//     //   </button>
-
-//     //   {/* Hidden icons that expand on clicking "+" */}
-//     //   <div className={`${styles.icons} ${iconsVisible ? styles.showIcons : ''}`}>
-//     //     {socialLinks.map(({ label, url, icon }) => (
-//     //       <a
-//     //         key={label}
-//     //         className={styles.navIconLink}
-//     //         aria-label={label}
-//     //         href={url}
-//     //         target="_blank"
-//     //         rel="noopener noreferrer"
-//     //       >
-//     //         <Icon className={styles.navIcon} icon={icon} />
-//     //       </a>
-//     //     ))}
-//     //   </div>
-//     // </div>
-//   );
-// };
+// const NavbarIcons = ({ desktop }) => (
+//   <div className={styles.navIcons}>
+//     {/* {socialLinks.map(({ label, url, icon }) => (
+//       <a
+//         key={label}
+//         data-navbar-item={desktop || undefined}
+//         className={styles.navIconLink}
+//         aria-label={label}
+//         href={url}
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         <Icon className={styles.navIcon} icon={icon} />
+//       </a>
+//     ))} */}
+//   </div>
+// );
