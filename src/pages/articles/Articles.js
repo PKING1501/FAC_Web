@@ -158,9 +158,11 @@ export const Articles = ({ posts, featured }) => {
   const postList = (
     <div className={styles.list}>
       {!isSingleColumn && postsHeader}
-      {posts.map(({ slug, ...post }, index) => (
-        <ArticlesPost key={slug} slug={slug} index={index} {...post} />
-      ))}
+      {posts
+        .filter(({ slug }) => slug !== 'events') // Filter out 'events.mdx'
+        .map(({ slug, ...post }, index) => (
+          <ArticlesPost key={slug} slug={slug} index={index} {...post} />
+        ))}
       {Array(2)
         .fill()
         .map((skeleton, index) => (

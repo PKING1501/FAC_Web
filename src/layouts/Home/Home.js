@@ -44,7 +44,7 @@ export const Home = () => {
   const projectFour = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree,projectFour, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -107,7 +107,6 @@ export const Home = () => {
         description="We engage in projects that integrate technical and fundamental analysis with advanced methodologies and tools "
         buttonText="View projects"
         buttonLink="/projects/smart-sparrow"
-        
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -125,14 +124,13 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-2"
-        
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Events"
         description="Explore our events like workshops, competitions, talks and sessions in areas of finance "
         buttonText="View Events"
-        buttonLink="/projects/slice"
+        buttonLink="/articles/events"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -153,7 +151,7 @@ export const Home = () => {
         title="Resources"
         description="Get yourself acquainted with finance insights through our tailored resources and roadmaps"
         buttonText="View Resources"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/resources"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -164,14 +162,13 @@ export const Home = () => {
             },
             {
               srcSet: [mobileTexture2, mobileTexture2Large],
-              placeholder:mobileTexture2Placeholder,
+              placeholder: mobileTexture2Placeholder,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-4"
-        
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}

@@ -41,7 +41,7 @@
   align-items: center;
   flex: 1 1 auto;
   max-width: var(--space2XL);
-
+  position: relative;
   @media (--mediaMobile), (--mediaMobileLS) {
     display: none;
   }
@@ -235,4 +235,36 @@
     opacity: 1;
     transform: none;
   }
+}
+
+.iconContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.plusIcon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  opacity: 0;
+  transform: translateX(-50px); /* Initially off-screen */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 40px; /* Adjust for spacing from "+" icon */
+}
+
+.showIcons {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+}
+
+.navIconLink {
+  margin-left: 10px; /* Adjust spacing between icons */
+  font-size: 24px;
 }

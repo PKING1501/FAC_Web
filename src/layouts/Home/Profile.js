@@ -42,30 +42,28 @@ const ProfileText = ({ visible, titleId }) => (
       financial statements to capital markets, Corporate Finance, Econometrics, art of
       investing, building trading ideas, strategies and FAC (IITK) feels humbled in
       covering these. */}
-      
-      Finance and Analytics Club at IITK aims to spread financial literacy amongst the campus
-      community & aspires to make everyone adept in handling Personal Finances. We work at
-      the merger of finance and analytics applying analytical understandings and tools in
-      the areas of finance and economics to
-       tackle real-world challenges.
-       Our approaches integrate a blend of advanced algorithmic trading, statistical modeling,
-        financial investment strategies, data analytics,e.t.c
-        </Text>
-        <br/>
-        <br />
-        <Text>
-      In collaboration with industry leaders, we offer training sessions, networking opportunities, 
-      and workshops to bridge the gap between academics and the professional world. By fostering
-       a passionate network of students and faculty, we strive to create an environment where 
-       learning, innovation, and practical experience in finance and analytics thrive.
-
-       </Text>
+      Finance and Analytics Club at IITK aims to spread financial literacy amongst the
+      campus community & aspires to make everyone adept in handling Personal Finances. We
+      work at the merger of finance and analytics applying analytical understandings and
+      tools in the areas of finance and economics to tackle real-world challenges. Our
+      approaches integrate a blend of advanced algorithmic trading, statistical modeling,
+      financial investment strategies, data analytics,e.t.c
+    </Text>
     <br />
     <br />
     <Text>
-      FAC IITK timetable is circumscribed with engaging activities
-      throughout the year including lectures, presentations, summer projects, assignments,
-      workshops, seminars on certifications, guest speakers & Q&A sessions.
+      In collaboration with industry leaders, we offer training sessions, networking
+      opportunities, and workshops to bridge the gap between academics and the
+      professional world. By fostering a passionate network of students and faculty, we
+      strive to create an environment where learning, innovation, and practical experience
+      in finance and analytics thrive.
+    </Text>
+    <br />
+    <br />
+    <Text>
+      FAC IITK timetable is circumscribed with engaging activities throughout the year
+      including lectures, presentations, summer projects, assignments, workshops, seminars
+      on certifications, guest speakers & Q&A sessions.
     </Text>
     <br />
     <br />
@@ -92,15 +90,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content}>
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
-              <Button
-                secondary
-                className={styles.button}
-                data-visible={visible}
-                href="/contact"
-                icon="send"
-              >
-                Send us a message
-              </Button>
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
@@ -114,6 +103,16 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   About Us
                 </div>
               </div>
+              <Button
+                secondary
+                className={styles.button}
+                data-visible={visible}
+                href="/contact"
+                icon="send"
+              >
+                Send us a message
+              </Button>
+              <br />
               <div className={styles.image}>
                 <Image
                   reveal
