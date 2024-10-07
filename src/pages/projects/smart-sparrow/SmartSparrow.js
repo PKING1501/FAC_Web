@@ -118,7 +118,7 @@ export const SmartSparrow = () => {
         />
         <ProjectHeader
           title={"Quant Web"}
-          description={" Dive deep into the world of quantitative finance by combining Python-driven trading strategies with robust risk management techniques, using Object-Oriented Programming (OOP). This project will have you design a Django-based testing platform that evaluates these strategies against both historical data and real-time market conditions. You'll learn to create a platform that ensures the resilience, effectiveness, and adaptability of your trading strategies across different market scenarios. Additionally, you'll explore how to dynamically adjust risk parameters and fine-tune strategies to maximize performance while minimizing losses."}
+          description={" This project is centered on backtesting engine, involving the development of Python-based trading strategies combined with risk management using Object-Oriented Programming (OOPs). A Django-based platform was created to test these strategies against both historical and real-time market data. The platform featured the ability to dynamically adjust risk parameters, enabling optimization of strategy performance while minimizing potential losses. The project provided a practical approach to understanding trading strategy development and risk management in financial markets."}
           // roles={roles}
         />
         <ProjectSection padding="top">
@@ -141,7 +141,7 @@ export const SmartSparrow = () => {
                            
         <ProjectHeader
           title={"Quant Forecast"}
-          description={"This project starts with the basics of finance and Python programming, gradually introducing machine learning concepts. With mentorship, you will develop frameworks that integrate sentiment analysis and quantitative trading strategies. You'll explore the application of these techniques in various financial contexts, including IPO predictions, investment opportunities, and stock price forecasting using Natural Language Processing (NLP). The goal is to build predictive models that combine market data with sentiment analysis to make informed trading decisions, creating a blend of machine learning and financial expertise."}
+          description={"This project started with fundamentals in finance and Python, gradually introducing machine learning. Frameworks were developed to integrate sentiment analysis and quantitative trading strategies. Applications included IPO predictions, investment opportunities, and stock price forecasting using Natural Language Processing (NLP). The goal was to build predictive models by combining market data with sentiment analysis, enabling informed trading decisions that blend machine learning with financial insights."}
           // url="https://www.smartsparrow.com/"
           // roles={roles}
         />
@@ -163,7 +163,7 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ProjectHeader
           title={"Algorisk Insights"}
-          description={"Immerse yourself in the development of algorithmic trading strategies by leveraging advanced technical analysis and risk management techniques. This project offers a deep dive into quantitative finance, with a focus on constructing diverse and versatile trading strategies. You'll explore various hedging techniques that allow you to reduce risk exposure and build an efficient, risk-minimized portfolio. Gain hands-on experience with algorithmic tools and frameworks, learning how to backtest, optimize, and automate your strategies in different financial instruments."}
+          description={"This project centered on the development of algorithmic trading strategies through advanced technical analysis and risk management techniques. It offered an in-depth exploration of quantitative finance, focusing on constructing diverse and versatile trading strategies. Various hedging techniques were implemented to reduce risk exposure and build efficient, risk-minimized portfolios. The project involved using algorithmic tools and frameworks for backtesting, optimizing, and automating strategies across different financial instruments, providing a comprehensive approach to algorithmic trading."}
           // url="https://www.smartsparrow.com/"
           // roles={roles}
         />
@@ -186,7 +186,7 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ProjectHeader
           title={ "Defi Unchanged"}
-          description={"This project introduces you to the groundbreaking world of blockchain and decentralized finance (DeFi). You'll explore the foundational principles of blockchain technology and learn Solidity, the programming language used to develop smart contracts. By the end of this project, you'll have written and tested your own smart contracts. Furthermore, you will design and simulate a DeFi stablecoin using Solidity, learning about the intricacies of decentralized finance, token economics, and how blockchain innovations are transforming the financial landscape."}
+          description={"This project explored blockchain and decentralized finance (DeFi), focusing on the foundational principles of blockchain technology and Solidity, the programming language for smart contract development. Smart contracts were written and tested, providing practical experience. Additionally, a DeFi stablecoin was designed and simulated using Solidity, offering insights into decentralized finance, token economics, and the transformative impact of blockchain innovations on the financial landscape. The project offered a comprehensive understanding of how blockchain is reshaping modern finance."}
           // url="https://www.smartsparrow.com/"
           // roles={roles}
         />
@@ -208,7 +208,7 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ProjectHeader
           title={"Intelli Invest"}
-          description={"This project focuses on the integration of statistical tests, technical indicators, and machine learning techniques to predict trades in real-time. You will learn how to apply modern portfolio theories, utilizing Python and statistical models to generate trade predictions. A key outcome of this project is the creation of a web-based interface that predicts trades and builds optimal portfolios from a set of stocks. You’ll utilize the techniques learned throughout the project to develop a system that offers real-time insights into trade opportunities and portfolio management strategies."}
+          description={"This project focused on integrating statistical tests, technical indicators, and machine learning techniques to predict trades in real-time. It emphasized the application of modern portfolio theories, using Python and statistical models to generate trade predictions. A key outcome was the development of a web-based interface that predicts trades and builds optimal portfolios from a selected set of stocks. The project provided real-time insights into trade opportunities and effective portfolio management strategies."}
           // url="https://www.smartsparrow.com/"
           // roles={roles}
         />
@@ -230,7 +230,7 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ProjectHeader
           title={"Deciphering Decisions"}
-          description={"Embark on a unique journey into the realm of behavioral finance, game theory, and cognitive biases to understand how psychological factors influence trading decisions. In this project, you'll learn how to integrate behavioral insights into your trading strategies to outmaneuver competitors. The project will also teach you to apply game theory in market scenarios and exploit cognitive biases to make smarter, more informed trading decisions. By gaining practical insights into the psychology of markets, you’ll be equipped to enhance your market performance and decision-making abilities."}
+          description={"This project explored behavioral finance, game theory, and cognitive biases to understand the psychological factors influencing trading decisions. It focused on integrating behavioral insights into trading strategies to outmaneuver competitors. The project taught the application of game theory in market scenarios and how to leverage cognitive biases for smarter, more informed trading decisions. By gaining practical insights into market psychology, participants were equipped to enhance market performance and improve decision-making abilities."}
           // url="https://www.smartsparrow.com/"
           // roles={roles}
         />
@@ -252,7 +252,7 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ProjectHeader
           title={'Market insights'}
-          description={'Master the essential theories behind trading in Stocks, Derivatives, Forex, Crypto, and other asset classes. This project blends theoretical finance with practical applications. Participate in finance discussions, theory classes, and group assignments to develop a solid understanding of trading principles. Each participant will be provided with a virtual trading account, allowing them to apply the learned theories in simulated real-market conditions. The goal is to equip you with the knowledge and tools to generate profits by turning theory into practice, honing your trading skills in a risk-free environment.'
+          description={'This project aimed to master essential theories behind trading in stocks, derivatives, forex, crypto, and other asset classes by blending theoretical finance with practical applications. It involved participation in finance discussions, theory classes, and group assignments to develop a solid understanding of trading principles. Each participant received a virtual trading account to apply learned theories in simulated real-market conditions. The goal was to equip participants with the knowledge and tools to generate profits by turning theory into practice while honing trading skills in a risk-free environment.'
             }
           // url="https://www.smartsparrow.com/"
           // roles={roles}
