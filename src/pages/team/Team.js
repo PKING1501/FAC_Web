@@ -28,10 +28,26 @@ import coordinator2 from 'assets/coordinator2.jpg';
 import coordinator3 from 'assets/coordinator3.jpg';
 import coordinator4 from 'assets/coordinator4.png';
 
+import y21_a from 'assets/y21_a.jpg';
+import y21_b from 'assets/y21_a.jpg';
+import y21_c from 'assets/y21_a.jpg';
+import y21_d from 'assets/y21_a.jpg';
+
+import y20_a from 'assets/y21_a.jpg';
+import y20_b from 'assets/y21_a.jpg';
+import y20_c from 'assets/y21_a.jpg';
+import y20_d from 'assets/y21_a.jpg';
+
+import y19_a from 'assets/y21_a.jpg';
+import y19_b from 'assets/y21_a.jpg';
+import y19_c from 'assets/y21_a.jpg';
+import y19_d from 'assets/y21_a.jpg';
+
+
 import secretary1 from 'assets/kethan.png';
-import secretary2 from 'assets/secretary29.png';
+import secretary2 from 'assets/akshat.jpg';
 import secretary3 from 'assets/ankit.jpg';
-import secretary4 from 'assets/secretary29.png';
+import secretary4 from 'assets/aman.jpg';
 import secretary5 from 'assets/keshav.jpg';
 import secretary6 from 'assets/anurag.jpg';
 import secretary7 from 'assets/aarush.jpeg';
@@ -56,8 +72,8 @@ import secretary25 from 'assets/shreyansh.jpg';
 import secretary26 from 'assets/arihant.jpg';
 import secretary27 from 'assets/hansika.png';
 import secretary28 from 'assets/secretary28.png';
-import secretary29 from 'assets/secretary29.png';
-import secretary30 from 'assets/secretary30.png';
+import secretary29 from 'assets/nitin.jpg';
+import secretary30 from 'assets/pranav.jpg';
 
 // Array of image sources
 const coordinatorImages = [
@@ -67,15 +83,35 @@ const coordinatorImages = [
   { src: coordinator4, alt: 'Rachit Choudhary', name: 'Rachit Choudhary' },
 ];
 
+const y21Images = [
+  { src: y21_a , alt: 'Alpha', name: 'Alpha' },
+  { src: y21_a, alt: 'Beta', name: 'Beta' },
+  { src: y21_a, alt: 'Gamma', name: 'Gamma' },
+  { src: y21_a, alt: 'Delta', name: 'Delta' },
+];
+
+const y20Images = [
+  { src: y21_a , alt: 'Alpha', name: 'Alpha' },
+  { src: y21_a, alt: 'Beta', name: 'Beta' },
+  { src: y21_a, alt: 'Gamma', name: 'Gamma' },
+  { src: y21_a, alt: 'Delta', name: 'Delta' },
+];
+const y19Images = [
+  { src: y21_a , alt: 'Alpha', name: 'Alpha' },
+  { src: y21_a, alt: 'Beta', name: 'Beta' },
+  { src: y21_a, alt: 'Gamma', name: 'Gamma' },
+  { src: y21_a, alt: 'Delta', name: 'Delta' },
+];
+
 const secretariesImages = [
   { src: secretary1, alt: 'Kethan', name: 'Kethan Challa' },
-  { src: secretary2, alt: 'Unnamed', name: 'Akshat Garg' },
+  { src: secretary2, alt: 'Akshat', name: 'Akshat Garg' },
   { src: secretary3, alt: 'Ankit', name: 'Ankit Kumar' },
-  { src: secretary4, alt: 'Unnamed', name: 'Aman Sanwal' },
+  { src: secretary4, alt: 'Aman', name: 'Aman Sanwal' },
   { src: secretary5, alt: 'Keshav', name: 'Keshav Bansal' },
   { src: secretary6, alt: 'Anurag', name: 'Anurag Thakur' },
   { src: secretary7, alt: 'Aarush', name: 'Aarush Singh' },
-  { src: secretary8, alt: 'Unnamed', name: 'Aarnav Gupta' },
+  { src: secretary8, alt: 'Aarnav', name: 'Aarnav Gupta' },
   { src: secretary9, alt: 'Ayush Singh', name: 'Ayush Singh' },
   { src: secretary10, alt: 'Khush', name: 'Khush Maheshwari' },
   { src: secretary11, alt: 'Shantanu', name: 'Shantanu Prakash' },
@@ -90,14 +126,14 @@ const secretariesImages = [
   { src: secretary20, alt: 'Sanchit', name: 'Sanchit Arora' },
   { src: secretary21, alt: 'Atishay', name: 'Atishay Jain' },
   { src: secretary22, alt: 'Shivam', name: 'Shivam Tomar' },
-  { src: secretary23, alt: 'Manit', name: 'Manit' },
+  { src: secretary23, alt: 'Manit', name: 'Manit Kapoor' },
   { src: secretary24, alt: 'Nischay', name: 'Nischay Agrawal' },
   { src: secretary25, alt: 'Shreyansh', name: 'Shreyansh Tarawat' },
   { src: secretary26, alt: 'Arihant', name: 'Arihant Satpathy' },
   { src: secretary27, alt: 'Hansika', name: 'Hansika Gupta' },
-  { src: secretary28, alt: 'Unnamed', name: 'Om Bhartiya' },
-  { src: secretary29, alt: 'Unnamed', name: 'Nitin Maheshwari' },
-  { src: secretary30, alt: 'Unnamed', name: 'Pranav Krishna' },
+  { src: secretary28, alt: 'Om', name: 'Om Bhartiya' },
+  { src: secretary29, alt: 'Nitin', name: 'Nitin Maheshwari' },
+  { src: secretary30, alt: 'Pranav', name: 'Pranav Krishna' },
 ];
 
 export const Team = () => {
@@ -316,6 +352,67 @@ export const Team = () => {
       </Heading>
       <div className={styles.secretariesContainer}>
         {secretariesImages.map((image, index) => (
+          <div key={index}>
+            <Image
+              key={index}
+              reveal
+              delay={100}
+              placeholder={image.src}
+              srcSet={[image.src]}
+              sizes="40vw, 480px"
+              alt={image.alt}
+              className={styles.image}
+            />
+            <p className={styles.imageName}>{image.name}</p>
+          </div>
+        ))}
+      </div>
+
+      <Heading className={styles.heading} data-visible={0} level={4} id={0}>
+        <DecoderText text="Y21 Coordinators" start={1} delay={500} />
+      </Heading>
+      <div className={styles.secretariesContainer}>
+        {y21Images.map((image, index) => (
+          <div key={index}>
+            <Image
+              key={index}
+              reveal
+              delay={100}
+              placeholder={image.src}
+              srcSet={[image.src]}
+              sizes="40vw, 480px"
+              alt={image.alt}
+              className={styles.image}
+            />
+            <p className={styles.imageName}>{image.name}</p>
+          </div>
+        ))}
+      </div>
+      <Heading className={styles.heading} data-visible={0} level={4} id={0}>
+        <DecoderText text="Y20 Coordinators" start={1} delay={500} />
+      </Heading>
+      <div className={styles.secretariesContainer}>
+        {y20Images.map((image, index) => (
+          <div key={index}>
+            <Image
+              key={index}
+              reveal
+              delay={100}
+              placeholder={image.src}
+              srcSet={[image.src]}
+              sizes="40vw, 480px"
+              alt={image.alt}
+              className={styles.image}
+            />
+            <p className={styles.imageName}>{image.name}</p>
+          </div>
+        ))}
+      </div>
+      <Heading className={styles.heading} data-visible={0} level={4} id={0}>
+        <DecoderText text="Y19 Coordinators" start={1} delay={500} />
+      </Heading>
+      <div className={styles.secretariesContainer}>
+        {y19Images.map((image, index) => (
           <div key={index}>
             <Image
               key={index}
