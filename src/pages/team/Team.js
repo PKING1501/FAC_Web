@@ -29,14 +29,14 @@ import coordinator3 from 'assets/coordinator3.jpg';
 import coordinator4 from 'assets/coordinator4.png';
 
 import y21_a from 'assets/y21_a.jpg';
-import y21_b from 'assets/y21_a.jpg';
-import y21_c from 'assets/y21_a.jpg';
+import y21_b from 'assets/y21_b.jpg';
+import y21_c from 'assets/y21_c.jpg';
 import y21_d from 'assets/y21_a.jpg';
 
-import y20_a from 'assets/y21_a.jpg';
-import y20_b from 'assets/y21_a.jpg';
-import y20_c from 'assets/y21_a.jpg';
-import y20_d from 'assets/y21_a.jpg';
+import y20_a from 'assets/y20_a.jpg';
+import y20_b from 'assets/y20_b.jpg';
+import y20_c from 'assets/y20_c.jpg';
+import y20_d from 'assets/y20_d.jpg';
 
 import y19_a from 'assets/y21_a.jpg';
 import y19_b from 'assets/y21_a.jpg';
@@ -51,7 +51,7 @@ import secretary4 from 'assets/aman.jpg';
 import secretary5 from 'assets/keshav.jpg';
 import secretary6 from 'assets/anurag.jpg';
 import secretary7 from 'assets/aarush.jpeg';
-import secretary8 from 'assets/secretary28.png';
+import secretary8 from 'assets/aarnav.jpg';
 import secretary9 from 'assets/ayush_singh.jpg';
 import secretary10 from 'assets/khush.jpg';
 import secretary11 from 'assets/shantanu.jpg';
@@ -71,7 +71,7 @@ import secretary24 from 'assets/nischay.jpeg';
 import secretary25 from 'assets/shreyansh.jpg';
 import secretary26 from 'assets/arihant.jpg';
 import secretary27 from 'assets/hansika.png';
-import secretary28 from 'assets/secretary28.png';
+import secretary28 from 'assets/om.jpg';
 import secretary29 from 'assets/nitin.jpg';
 import secretary30 from 'assets/pranav.jpg';
 
@@ -85,16 +85,16 @@ const coordinatorImages = [
 
 const y21Images = [
   { src: y21_a , alt: 'Alpha', name: 'Alpha' },
-  { src: y21_a, alt: 'Beta', name: 'Beta' },
-  { src: y21_a, alt: 'Gamma', name: 'Gamma' },
+  { src: y21_b, alt: 'Devanshi', name: 'Devanshi Rastogi' },
+  { src: y21_c, alt: 'Keshav', name: 'Keshav Raj Gupta' },
   { src: y21_a, alt: 'Delta', name: 'Delta' },
-];
+]
 
 const y20Images = [
-  { src: y21_a , alt: 'Alpha', name: 'Alpha' },
-  { src: y21_a, alt: 'Beta', name: 'Beta' },
-  { src: y21_a, alt: 'Gamma', name: 'Gamma' },
-  { src: y21_a, alt: 'Delta', name: 'Delta' },
+  { src: y20_a , alt: 'Shivam Pandey', name: 'Shivam Pandey' },
+  { src: y20_b, alt: 'Sujal Harkut', name: 'Sujal Harkut' },
+  { src: y20_c, alt: 'Dakshita Mittal', name: 'Dakshita Mittal' },
+  { src: y20_d, alt: 'Aditya Anand', name: 'Aditya Anand' },
 ];
 const y19Images = [
   { src: y21_a , alt: 'Alpha', name: 'Alpha' },
