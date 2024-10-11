@@ -31,7 +31,7 @@ import coordinator4 from 'assets/coordinator4.png';
 import y21_a from 'assets/y21_a.jpg';
 import y21_b from 'assets/y21_b.jpg';
 import y21_c from 'assets/y21_c.jpg';
-import y21_d from 'assets/y21_a.jpg';
+import y21_d from 'assets/y21_d.jpg';
 
 import y20_a from 'assets/y20_a.jpg';
 import y20_b from 'assets/y20_b.jpg';
@@ -48,32 +48,32 @@ import secretary1 from 'assets/kethan.png';
 import secretary2 from 'assets/akshat.jpg';
 import secretary3 from 'assets/ankit.jpg';
 import secretary4 from 'assets/aman.jpg';
-import secretary5 from 'assets/keshav.jpg';
-import secretary6 from 'assets/anurag.jpg';
-import secretary7 from 'assets/aarush.jpeg';
-import secretary8 from 'assets/aarnav.jpg';
-import secretary9 from 'assets/ayush_singh.jpg';
-import secretary10 from 'assets/khush.jpg';
-import secretary11 from 'assets/shantanu.jpg';
-import secretary12 from 'assets/atit.jpg';
-import secretary13 from 'assets/pallav.jpg';
-import secretary14 from 'assets/neel.jpg';
-import secretary15 from 'assets/kushagra.jpg';
-import secretary16 from 'assets/Siddharth.jpg';
-import secretary17 from 'assets/ashish.jpg';
-import secretary18 from 'assets/ayush.jpg';
-import secretary19 from 'assets/harsh.jpg';
-import secretary20 from 'assets/sanchit.jpg';
-import secretary21 from 'assets/atishay.jpg';
-import secretary22 from 'assets/shivam.jpg';
-import secretary23 from 'assets/manit.jpeg';
-import secretary24 from 'assets/nischay.jpeg';
-import secretary25 from 'assets/shreyansh.jpg';
-import secretary26 from 'assets/arihant.jpg';
-import secretary27 from 'assets/hansika.png';
-import secretary28 from 'assets/om.jpg';
-import secretary29 from 'assets/nitin.jpg';
-import secretary30 from 'assets/pranav.jpg';
+import secretary5 from 'assets/khush.jpg';
+import secretary6 from 'assets/keshav.jpg';
+import secretary7 from 'assets/anurag.jpg';
+import secretary8 from 'assets/aarush.jpeg';
+import secretary9 from 'assets/aarnav.jpg';
+import secretary10 from 'assets/ayush_singh.jpg';
+import secretary11 from 'assets/atit.jpg';
+import secretary12 from 'assets/pallav.jpg';
+import secretary13 from 'assets/neel.jpg';
+import secretary14 from 'assets/kushagra.jpg';
+import secretary15 from 'assets/Siddharth.jpg';
+import secretary16 from 'assets/ashish.jpg';
+import secretary17 from 'assets/ayush.jpg';
+import secretary18 from 'assets/harsh.jpg';
+import secretary19 from 'assets/sanchit.jpg';
+import secretary20 from 'assets/atishay.jpg';
+import secretary21 from 'assets/shivam.jpg';
+import secretary22 from 'assets/manit.jpeg';
+import secretary23 from 'assets/nischay.jpeg';
+import secretary24 from 'assets/shreyansh.jpg';
+import secretary25 from 'assets/arihant.jpg';
+import secretary26 from 'assets/hansika.png';
+import secretary27 from 'assets/om.jpg';
+import secretary28 from 'assets/nitin.jpg';
+import secretary29 from 'assets/pranav.jpg';
+
 
 // Array of image sources
 const coordinatorImages = [
@@ -87,7 +87,7 @@ const y21Images = [
   { src: y21_a , alt: 'Alpha', name: 'Alpha' },
   { src: y21_b, alt: 'Devanshi', name: 'Devanshi Rastogi' },
   { src: y21_c, alt: 'Keshav', name: 'Keshav Raj Gupta' },
-  { src: y21_a, alt: 'Delta', name: 'Delta' },
+  { src: y21_d, alt: 'Shivansh', name: 'Shivansh Gupta' },
 ]
 
 const y20Images = [
@@ -108,32 +108,31 @@ const secretariesImages = [
   { src: secretary2, alt: 'Akshat', name: 'Akshat Garg' },
   { src: secretary3, alt: 'Ankit', name: 'Ankit Kumar' },
   { src: secretary4, alt: 'Aman', name: 'Aman Sanwal' },
-  { src: secretary5, alt: 'Keshav', name: 'Keshav Bansal' },
-  { src: secretary6, alt: 'Anurag', name: 'Anurag Thakur' },
-  { src: secretary7, alt: 'Aarush', name: 'Aarush Singh' },
-  { src: secretary8, alt: 'Aarnav', name: 'Aarnav Gupta' },
-  { src: secretary9, alt: 'Ayush Singh', name: 'Ayush Singh Kumar' },
-  { src: secretary10, alt: 'Khush', name: 'Khush Maheshwari' },
-  { src: secretary11, alt: 'Shantanu', name: 'Shantanu Prakash' },
-  { src: secretary12, alt: 'Atit', name: 'Atit Kumar Satsangi' },
-  { src: secretary13, alt: 'Pallav', name: 'Pallav Rastogi' },
-  { src: secretary14, alt: 'Neel', name: 'Neel D Jadia' },
-  { src: secretary15, alt: 'Kushagra', name: 'Kushagra Tiwari' },
-  { src: secretary16, alt: 'Siddharth', name: 'Siddharth Jaiswal' },
-  { src: secretary17, alt: 'Ashish', name: 'Ashish Upadhyay' },
-  { src: secretary18, alt: 'Ayush', name: 'Ayush Omer' },
-  { src: secretary19, alt: 'Harsh', name: 'Harshvardhan Gaur' },
-  { src: secretary20, alt: 'Sanchit', name: 'Sanchit Arora' },
-  { src: secretary21, alt: 'Atishay', name: 'Atishay Jain' },
-  { src: secretary22, alt: 'Shivam', name: 'Shivam Tomar' },
-  { src: secretary23, alt: 'Manit', name: 'Manit Kapoor' },
-  { src: secretary24, alt: 'Nischay', name: 'Nischay Agrawal' },
-  { src: secretary25, alt: 'Shreyansh', name: 'Shreyansh Tarawat' },
-  { src: secretary26, alt: 'Arihant', name: 'Arihant Satpathy' },
-  { src: secretary27, alt: 'Hansika', name: 'Hansika Gupta' },
-  { src: secretary28, alt: 'Om', name: 'Om Bhartiya' },
-  { src: secretary29, alt: 'Nitin', name: 'Nitin Maheshwari' },
-  { src: secretary30, alt: 'Pranav', name: 'Pranav Krishna' },
+  { src: secretary5, alt: 'Khush', name: 'Khush Maheshwari' },
+  { src: secretary6, alt: 'Keshav', name: 'Keshav Bansal' },
+  { src: secretary7, alt: 'Anurag', name: 'Anurag Thakur' },
+  { src: secretary8, alt: 'Aarush', name: 'Aarush Singh' },
+  { src: secretary9, alt: 'Aarnav', name: 'Aarnav Gupta' },
+  { src: secretary10, alt: 'Ayush Singh', name: 'Ayush Singh Kumar' },
+  { src: secretary11, alt: 'Atit', name: 'Atit Kumar Satsangi' },
+  { src: secretary12, alt: 'Pallav', name: 'Pallav Rastogi' },
+  { src: secretary13, alt: 'Neel', name: 'Neel D Jadia' },
+  { src: secretary14, alt: 'Kushagra', name: 'Kushagra Tiwari' },
+  { src: secretary15, alt: 'Siddharth', name: 'Siddharth Jaiswal' },
+  { src: secretary16, alt: 'Ashish', name: 'Ashish Upadhyay' },
+  { src: secretary17, alt: 'Ayush', name: 'Ayush Omer' },
+  { src: secretary18, alt: 'Harsh', name: 'Harshvardhan Gaur' },
+  { src: secretary19, alt: 'Sanchit', name: 'Sanchit Arora' },
+  { src: secretary20, alt: 'Atishay', name: 'Atishay Jain' },
+  { src: secretary21, alt: 'Shivam', name: 'Shivam Tomar' },
+  { src: secretary22, alt: 'Manit', name: 'Manit Kapoor' },
+  { src: secretary23, alt: 'Nischay', name: 'Nischay Agrawal' },
+  { src: secretary24, alt: 'Shreyansh', name: 'Shreyansh Tarawat' },
+  { src: secretary25, alt: 'Arihant', name: 'Arihant Satpathy' },
+  { src: secretary26, alt: 'Hansika', name: 'Hansika Gupta' },
+  { src: secretary27, alt: 'Om', name: 'Om Bhartiya' },
+  { src: secretary28, alt: 'Nitin', name: 'Nitin Maheshwari' },
+  { src: secretary29, alt: 'Pranav', name: 'Pranav Krishna' },  
 ];
 
 export const Team = () => {
