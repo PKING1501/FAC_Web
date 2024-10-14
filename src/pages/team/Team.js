@@ -88,7 +88,7 @@ const y21Images = [
   { src: y21_b, alt: 'Devanshi', name: 'Devanshi Rastogi' },
   { src: y21_c, alt: 'Keshav', name: 'Keshav Raj Gupta' },
   { src: y21_d, alt: 'Shivansh', name: 'Shivansh Gupta' },
-]
+];
 
 const y20Images = [
   { src: y20_a , alt: 'Shivam Pandey', name: 'Shivam Pandey' },
