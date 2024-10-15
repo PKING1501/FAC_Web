@@ -38,10 +38,10 @@ import y20_b from 'assets/y20_b.jpg';
 import y20_c from 'assets/y20_c.jpg';
 import y20_d from 'assets/y20_d.jpg';
 
-import y19_a from 'assets/y21_a.jpg';
-import y19_b from 'assets/y21_a.jpg';
-import y19_c from 'assets/y21_a.jpg';
-import y19_d from 'assets/y21_a.jpg';
+import y19_a from 'assets/empty.png';
+import y19_b from 'assets/empty.png';
+import y19_c from 'assets/empty.png';
+import y19_d from 'assets/empty.png';
 
 
 import secretary1 from 'assets/kethan.png';
@@ -84,7 +84,7 @@ const coordinatorImages = [
 ];
 
 const y21Images = [
-  { src: y21_a , alt: 'Alpha', name: 'Alpha' },
+  { src: y21_a , alt: 'Vishal', name: 'Vishal Himmatsinghka' },
   { src: y21_b, alt: 'Devanshi', name: 'Devanshi Rastogi' },
   { src: y21_c, alt: 'Keshav', name: 'Keshav Raj Gupta' },
   { src: y21_d, alt: 'Shivansh', name: 'Shivansh Gupta' },
@@ -97,10 +97,10 @@ const y20Images = [
   { src: y20_d, alt: 'Aditya Anand', name: 'Aditya Anand' },
 ];
 const y19Images = [
-  { src: y21_a , alt: 'Alpha', name: 'Alpha' },
-  { src: y21_a, alt: 'Beta', name: 'Beta' },
-  { src: y21_a, alt: 'Gamma', name: 'Gamma' },
-  { src: y21_a, alt: 'Delta', name: 'Delta' },
+  { src: y19_a , alt: 'Alpha', name: 'Alpha' },
+  { src: y19_b, alt: 'Beta', name: 'Beta' },
+  { src: y19_c, alt: 'Gamma', name: 'Gamma' },
+  { src: y19_d, alt: 'Delta', name: 'Delta' },
 ];
 
 const secretariesImages = [
