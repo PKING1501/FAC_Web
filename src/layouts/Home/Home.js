@@ -151,7 +151,7 @@ export const Home = () => {
         title="Resources"
         description="Get yourself acquainted with finance insights through our tailored resources and roadmaps"
         buttonText="View Resources"
-        buttonLink="/projects/resources"
+        buttonLink="/articles"
         model={{
           type: 'phone',
           alt: 'App login screen',
