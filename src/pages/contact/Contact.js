@@ -37,16 +37,16 @@ export const Contact = () => {
 
       emailjs
         .send(
-          'service_po9cbo8', // paste your ServiceID here (you'll get one when your service is created).
-          'template_lrvecac', // paste your TemplateID here (you'll find it under email templates).
+          'service_8onqcrt', // paste your ServiceID here (you'll get one when your service is created).
+          'template_sz27p84', // paste your TemplateID here (you'll find it under email templates).
           {
             from_name: formName.value,
             to_name: 'FAC_IITK', // put your name here.
             from_email: email.value,
-            to_email: 'prem.kansagra1234@gmail.com', //put your email here.
+            to_email: 'financeanalyticsclub.iitk@gmail.com', //put your email here.
             message: message.value,
           },
-          '4nn9vaVYg9qqQwfZf' //paste your Public Key here. You'll get it in your profile section.
+          '1MF2CXyBJQ0IfiAPl' //paste your Public Key here. You'll get it in your profile section.
         )
         .then(
           () => {
