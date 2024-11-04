@@ -148,9 +148,9 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Resources"
-        description="Get yourself acquainted with finance insights through our tailored resources and roadmaps"
-        buttonText="View Resources"
+        title="Articles"
+        description="Stay informed and inspired with our latest insights into global finance trends and updates."
+        buttonText="View Articles"
         buttonLink="/articles"
         model={{
           type: 'phone',
