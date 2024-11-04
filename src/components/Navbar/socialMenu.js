@@ -7,7 +7,7 @@ import {
   IoLogoGithub,
   IoLogoYoutube,
 } from 'react-icons/io';
-import { IoAddSharp } from 'react-icons/io5';
+import { IoAddSharp, IoLogoMedium } from 'react-icons/io5';
 
 const SocialMenu = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -67,6 +67,24 @@ const SocialMenu = () => {
             <IoLogoLinkedin />
           </a>
         </li>
+        <li style={{ '--i': 6, '--clr': '#1877f2' }}>
+          <a
+            href="https://medium.com/@financeanalyticsclub.iitk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoMedium />
+          </a>
+        </li>
+        {/* <li style={{ '--i': 7, '--clr': '#1877f2' }}>
+          <a
+            href="https://medium.com/@financeanalyticsclub.iitk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoMail />
+          </a>
+        </li> */}
       </ul>
     </div>
   );

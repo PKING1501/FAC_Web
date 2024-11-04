@@ -17,6 +17,7 @@ import Send from './svg/send.svg';
 import Twitter from './svg/twitter.svg';
 import Facebook from './svg/facebook.svg';
 import LinkedIn from './svg/linkedin.svg';
+import Medium from './svg/medium.svg';
 
 export const icons = {
   arrowLeft: ArrowLeft,
@@ -31,6 +32,7 @@ export const icons = {
   github: Github,
   link: Link,
   linkedin: LinkedIn,
+  medium: Medium,
   menu: Menu,
   pause: Pause,
   play: Play,

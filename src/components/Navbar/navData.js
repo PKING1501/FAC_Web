@@ -52,4 +52,9 @@ export const socialLinks = [
     url: 'https://github.com/Finance-and-Analytics-Club-FAC-IITK',
     icon: 'github',
   },
+  {
+    label: 'Medium',
+    url: 'https://medium.com/@financeanalyticsclub.iitk',
+    icon: 'medium',
+  },
 ];
