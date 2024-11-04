@@ -407,7 +407,7 @@ export const Team = () => {
           </div>
         ))}
       </div>
-      <Heading className={styles.heading} data-visible={0} level={4} id={0}>
+      {/* <Heading className={styles.heading} data-visible={0} level={4} id={0}>
         <DecoderText text="Y19 Coordinators" start={1} delay={500} />
       </Heading>
       <div className={styles.secretariesContainer}>
@@ -426,7 +426,7 @@ export const Team = () => {
             <p className={styles.imageName}>{image.name}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </Section>
   );
 };
