@@ -84,7 +84,9 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say Hi !" start={status !== 'exited'} delay={300} />
+              <DecoderText text="Queries or Inquiries," start={status !== 'exited'} delay={300} />
+              <br></br>
+              <DecoderText text="Reach out!" start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}
@@ -177,7 +179,21 @@ export const Contact = () => {
               style={getDelay(tokens.base.durationXS)}
             >
               Thank you. We will get back to you as soon as possible.
+              
             </Text>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Heading
+              level={4}
+              as="h4"
+              className={styles.completeTitle}
+              data-status={status}
+            >
+              Risk. Reward. Repeat.
+            </Heading>
             <Button
               secondary
               iconHoverShift

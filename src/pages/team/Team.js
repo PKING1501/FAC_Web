@@ -60,8 +60,8 @@ import secretary13 from 'assets/neel.jpg';
 import secretary14 from 'assets/kushagra.jpg';
 import secretary15 from 'assets/Siddharth.jpg';
 import secretary16 from 'assets/ashish.jpg';
-import secretary17 from 'assets/ayush.jpg';
-import secretary18 from 'assets/harsh.jpg';
+import secretary17 from 'assets/harsh.jpg';
+import secretary18 from 'assets/ayush.jpg';
 import secretary19 from 'assets/sanchit.jpg';
 import secretary20 from 'assets/atishay.jpg';
 import secretary21 from 'assets/shivam.jpg';
@@ -120,8 +120,8 @@ const secretariesImages = [
   { src: secretary14, alt: 'Kushagra', name: 'Kushagra Tiwari' },
   { src: secretary15, alt: 'Siddharth', name: 'Siddharth Jaiswal' },
   { src: secretary16, alt: 'Ashish', name: 'Ashish Upadhyay' },
-  { src: secretary17, alt: 'Ayush', name: 'Ayush Omer' },
-  { src: secretary18, alt: 'Harsh', name: 'Harshvardhan Gaur' },
+  { src: secretary17, alt: 'Harsh', name: 'Harshvardhan Gaur' },
+  { src: secretary18, alt: 'Ayush', name: 'Ayush Omer' },
   { src: secretary19, alt: 'Sanchit', name: 'Sanchit Arora' },
   { src: secretary20, alt: 'Atishay', name: 'Atishay Jain' },
   { src: secretary21, alt: 'Shivam', name: 'Shivam Tomar' },
@@ -427,6 +427,12 @@ export const Team = () => {
           </div>
         ))}
       </div> */}
+      <br />
+      <br />
+      <br />
+        <br />  
+        <br />
+        <br />
     </Section>
   );
 };
